@@ -1,0 +1,139 @@
+/* font-family: 'Delius Unicase', cursive;
+font-family: 'Roboto', sans-serif; */
+
+/* general styles */
+
+h2 {
+  font-family: "Delius Unicase";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.date {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #e0e0e0;
+}
+
+
+/* image gallery styles */
+img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: -1;
+}
+
+
+
+
+.image-wrapper{
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
+}
+
+.meta{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+    padding: 0px 20px;
+}
+
+
+/* grid adjustment */
+
+.small1{
+    grid-area: small1;
+}
+
+.small2{
+    grid-area: small2;
+}
+
+.small3{
+    grid-area: small3;
+}
+
+
+.large1{
+    grid-area: large1;
+}
+
+.large2{
+    grid-area: large2;
+}
+
+.large3{
+    grid-area: large3;
+}
+
+.architect .grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    'small1 large1 large1'
+    'large2 large2 small2'
+    'small3 large3 large3'
+    ;
+    row-gap: 30px;
+    column-gap: 30px;
+    
+}
+
+
+@media only screen and (max-width: 1024px){
+
+    .architect .grid-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        'large1 large1'
+        'small1  small2'
+        'large2 large2'
+        'large3 large3'
+        'small3 small3'
+        ;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 767px){
+
+    .architect .grid-wrapper{
+        display: grid;
+        grid-template-columns: 100%;
+        /* grid-template-areas: 
+        'large1 large1'
+        'small1  small2'
+        'large2 large2'
+        'large3 large3'
+        'small3 small3'
+        ; */
+        
+    }
+    
+}
+
+
