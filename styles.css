@@ -4,7 +4,7 @@ font-family: 'Roboto', sans-serif; */
 /* general styles for all */
 
 body {
-  max-width: 100%;
+  max-width: 90%;
   margin: auto;
 }
 
@@ -17,6 +17,7 @@ h2 {
   text-align: center;
   letter-spacing: 0.05em;
   color: #000000;
+  margin: 120px auto 80px;
 }
 
 .name {
@@ -44,6 +45,11 @@ img {
   z-index: -1;
   transition: all 1000ms;
 }
+
+section{
+    padding-bottom: 20px;
+}
+
 
 .icon {
   height: 40px;
@@ -107,12 +113,12 @@ img {
 }
 
 .heart:hover path{
-    fill: rgb(255, 0, 0);
+    fill: black;
     transition: all 200ms;
 }
 
 .download:hover path{
-    fill: rgb(13, 0, 255);
+    fill: black;
     transition: all 700ms;
 }
 
